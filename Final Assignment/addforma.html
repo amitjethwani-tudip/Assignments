@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="amit.css">
+<link rel="icon" type="image/png" href="C:\Users\Lenovo\Desktop\tudip.png">
+
+<link rel="stylesheet" href="bootstrap-3.3.6-dist\bootstrap-3.3.6-dist\css\bootstrap.css">
+
+<script src="jquery-1.12.4.js"></script>
+<script src="bootstrap-3.3.6-dist\bootstrap-3.3.6-dist\js\bootstrap.min.js"></script>
+<script src = "angular.min.js"></script>
+<script src="C:\Users\Lenovo\Desktop\amit1\amit\a1.js"></script>
+<title>Registration Form</title>
+</head>
+<div class="container-fluid">
+<body style="background-color:orange">
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+	<nav class="navbar navbar-inverse" >
+  
+    	<div class="navbar-header">
+      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#amit">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="a1.html">Tudip</a>
+    	</div>
+    		<div class="collapse navbar-collapse" id="amit">
+      		<ul class="nav navbar-nav">
+        		<li><a href="http://tudip.com/" target="_blank">Home</a></li>
+        
+        		<li><a href="a3.html">About us</a></li>
+        		<li><a href="a4.html">Careers</a></li>
+      		</ul>
+      		<ul class="nav navbar-nav navbar-right">
+        		<li><a href="prac.html"><span class="glyphicon glyphicon-off"></span>Log-Out</a></li>
+        		
+    		</div>
+  
+	</nav>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<h2 style="background-color:white;color:red;padding:5px;text-align:center">:Welcome User:</h2>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+
+ 
+				<fieldset>
+    			<legend style="text-align:center">:New Vistor:</legend>
+
+  
+  
+    
+
+
+
+
+<div ng-app = "mainApp" ng-controller = "loginController">  
+
+
+         
+         <form name = "studentForm"  action="input.php" method="post">   
+         <form role="form">
+             
+                  
+                 
+               <div class="form-group">
+              <b>FullName:</b><br><input name = "FullName" type = "text" ng-model = "fullname" length = "30" placeholder="Enter name:"  autocomplete required>  
+                     <span style = "color:red" ng-show = "studentForm.FullName.$dirty && studentForm.FullName.$invalid"></span> 
+                        <span style="color:red" ng-show = "studentForm.FullName.$error.required">FullName is required.</span>  
+                        </div>
+
+                        
+                        
+                      <div class="form-group">
+                     <b>Mobile Number:</b><br><input name= "number" type="text" ng-model = "number" length = "10" placeholder="Enter the Mobile Number" min-lenght="10"  required>
+                     <span style = "color:red" ng-show = "studentForm.number.$dirty && studentForm.number.$invalid"></span> 
+                        <span  style="color:red" ng-show = "studentForm.number.$error.required">Number is required.</span></br>
+                  
+                  </div>
+
+                  <div class="form-group">
+                     <b>In-Time:</b><br><input name= "in" type="text" ng-model = "in" length = "10" placeholder="HH:MM:SS" required>
+                     <span style = "color:red" ng-show = "studentForm.in.$dirty && studentForm.in.$invalid"></span> 
+                        <span  style="color:red" ng-show = "studentForm.in.$error.required">In-Time is required.</span></br>
+                  
+                  </div>
+
+                  <div class="form-group">
+                     <b>Out-Time:</b><br><input name= "out" type="text" ng-model = "out" length = "10" placeholder="HH:MM:SS" required>
+                     <span style = "color:red" ng-show = "studentForm.out.$dirty && studentForm.out.$invalid"></span> 
+                        <span  style="color:red" ng-show = "studentForm.out.$error.required">Out-Time is required.</span></br>
+                  
+                  </div>
+                  <div class="form-group">
+                     <b>Email:</b><br><input name= "email" type="email" ng-model = "email" length = "30"  placeholder="Email Address" required>
+                     <span style = "color:red" ng-show = "studentForm.email.$dirty && studentForm.email.$invalid"></span> 
+                        <span  style="color:red" ng-show = "studentForm.email.$error.required">Email is required.</span></br>
+                  
+                  </div>
+				  <div class="form-group">
+                     <b>ID:</b><br><input  type="text"  ng-model="id" name= "id" required>
+                     <span style = "color:red" ng-show = "studentForm.id.$dirty && studentForm.id.$invalid"></span> 
+                        <span  style="color:red" ng-show = "studentForm.id.$error.required">ID is required.</span></br>
+                  
+                  </div>
+                 <span class="glyphicon glyphicon-repeat"></span>
+                     <a href="http://localhost/amit/addforma.html" class="btn btn-default">Reset</a>   
+                     
+                     
+                     
+                  
+                     
+                       
+<input type="submit" class="btn btn-default" Name="Add" value="Add"/> 
+                        
+                       
+						
+						<a href="inserta.php" class="btn btn-default">view</a>
+                        
+                  
+         
+     
+       
+        </fieldset>
+  </form>
+  
+</div>
+</div>
+</div>
+</div>
+
+<script>  
+         var mainApp = angular.module("mainApp", []);  
+           
+         mainApp.controller('loginController', function($scope) {  
+            $scope.reset = function(){  
+              
+             $scope.UserName = "hgvjhb";  
+             $scope.pwd = "ihkjn";  
+            }  
+              
+            $scope.reset();  
+         });  
+      </script>  
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<p style="color:red">Note: Please check login credentials.</p>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-12">
+  <div id="footer">
+  Copyright &copy;www.<span style="color:yellow">tudiptechnologies</span>.com
+
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

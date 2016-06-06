@@ -1,0 +1,82 @@
+input[type=text] {
+ 
+ width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=email] {
+  
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=time] {
+  
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+
+input[type=address] {
+  
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=date] {
+  
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=tel] {
+
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=password] {
+
+  width: 200px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border-radius: 5px; }
+
+input[type=submit] {
+  
+  
+  border-radius: 5px; }
+
+h3 {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; }
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline; }
+
+#header {
+  background-color: grey;
+  color: orange;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px; }
+
+#footer {
+  background-color: black;
+  color: white;
+  clear: both;
+  text-align: center;
+  padding: 10px; }
+
+/*# sourceMappingURL=amit.css.map */

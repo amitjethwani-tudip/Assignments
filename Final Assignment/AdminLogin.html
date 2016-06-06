@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "angular.js"></script> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--Custom CSS-->
+    <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  function sumbitFunction(){
+  var x=document.forms["AdminForm"]["username"].value;
+  var y=document.forms["AdminForm"]["password"].value;
+	if(x==null||""||y==null||y==""){
+	alert("Both fields can't be empty");
+	}
+	else{
+		if(x=="asd"){
+			if(y=="123"){
+				alert("LOGIN SUCCESSFUL");
+			}
+			else{
+				alert("LOGIN SUCCESSFUL");
+			}	
+		}
+		else{
+			alert("NOT EXIST");
+		}
+	}
+}
+</script>
+  
+  
+  
+ </head>
+<body>
+
+<div class="container">
+  <h2>Admin Login</h2>
+  <div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+  <form name="AdminForm" onsubmit="sumbitFunction()" onclick="control_rep.html" action="control.html">
+    <div class="form-group">
+      <label for="name">name:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter name" ng-model = "firstName" required>
+	  <span style = "color:red" ng-show = "AdminForm.name.$dirty && AdminForm.name.$invalid">  
+           <span ng-show = "AdminForm.name.$error.required">name is required.</span>  
+             </span> 
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" ng-model = "Password" required>
+	  <span style = "color:red" ng-show = "AdminForm.password.$dirty && AdminForm.password.$invalid">  
+                        <span ng-show = "AdminForm.password.$error.required">Password is required.</span></span>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    
+	<button type="submit" class="btn btn-default" ng-click="submitFunction()" >Submit</button>  
+  </form>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
